@@ -1,4 +1,4 @@
-package com.corejavaproject.jdbc;
+package com.corejavaproject.jdbc.DBConnection;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,6 +10,7 @@ import java.util.Properties;
 public class DBConnection {
     public static Connection getConnection() throws IOException, SQLException {
         Properties props = new Properties();
+
         FileInputStream fis = new FileInputStream("D:\\CoreJavaProjects\\JavaProject\\src\\main\\resources\\application.properties");
         props.load(fis);
 
