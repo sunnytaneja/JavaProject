@@ -1,4 +1,4 @@
-package com.corejavaproject.jdbc;
+package com.corejavaproject.jdbc.BankModel;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,5 +1,19 @@
 package com.corejavaproject.assignment29July;
 
-public class Assignment29July {
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter
+@Setter
+@ToString
+public class Student implements Comparable<Student> {
+    private String name;
+    private String emailId;
+    private String course;
+
+    @Override
+    public int compareTo(Student student) {
+        return this.getName().compareTo(student.getName());
+    }
 }

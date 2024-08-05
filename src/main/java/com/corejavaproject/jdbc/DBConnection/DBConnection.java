@@ -1,4 +1,4 @@
-package com.corejavaproject.jdbc;
+package com.corejavaproject.jdbc.DBConnection;
 
 import java.io.FileInputStream;
 import java.io.IOException;

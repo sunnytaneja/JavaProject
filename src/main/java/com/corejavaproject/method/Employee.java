@@ -6,8 +6,8 @@ import lombok.extern.log4j.Log4j2;
 public class Employee {
     public static final String ORG_NAME = "Intel";
 
-    private int empId;
-    private String empName;
+    private final int empId;
+    private final String empName;
 
     public Employee(int empId, String empName) {
         this.empId = empId;
