@@ -10,6 +10,7 @@ public class BankMain {
     public static void main(String[] args) {
         BankDAO bankDAO = new BankDAO();
 
+
         /*try {
             Connection connection = DBConnection.getConnection();
             log.info(connection);
