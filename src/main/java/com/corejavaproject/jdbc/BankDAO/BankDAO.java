@@ -75,27 +75,3 @@ public class BankDAO {
 
 
 }
-
-    /**
-     * Delete Query
-     *
-     * @param bank
-     * @return
-     */
-    public int delete(Bank bank) {
-        log.info("Inside the BankDAO.delete, bank:{}", bank);
-        int response = 0;
-        try (Connection connection = DBConnection.getConnection()) {
-            String sql = "delete from t_Bank where BANK_CODE=?";
-            PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1, bank.getBankCode());
-            response = statement.executeUpdate();
-            log.info("Delete Response:{}", response);
-        } catch (Exception ex) {
-            log.error("Exception while Delete bank details");
-        }
-        log.info("End of BankDAO.delete");
-        return response;
-    }
-
-}
