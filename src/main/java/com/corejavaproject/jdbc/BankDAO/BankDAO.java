@@ -13,13 +13,12 @@ public class BankDAO {
         log.info("Inside the BankDAO.save, bank:{}", bank);
         int response = 0;
         try (Connection connection = DBConnection.getConnection()) {
-            String sql = "insert into t_bank(BANK_CODE, BANK_NAME,BANK_ADDRESS) values(BANK_CODE_SEQUENCE.nextval,'SBI','Gurugram')";
+            String sql = "insert into t_bank(BANK_CODE, BANK_NAME,BANK_ADDRESS) values(BANK_CODE_SEQUENCE.nextval,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, bank.getBankName());
             statement.setString(2, bank.getBankAddress());
 
             response = statement.executeUpdate();
-
             log.info("Save Response:{}", response);
         } catch (Exception ex) {
             log.error("Exception while saving bank details");
@@ -51,6 +50,31 @@ public class BankDAO {
         log.info("End of BankDAO.update");
         return response;
     }
+
+    /**
+     * Delete Query
+     *
+     * @param bank
+     * @return
+     */
+    public int delete(Bank bank) {
+        log.info("Inside the BankDAO.delete, bank:{}", bank);
+        int response = 0;
+        try (Connection connection = DBConnection.getConnection()) {
+            String sql = "delete from t_Bank where BANK_CODE=?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, bank.getBankCode());
+            response = statement.executeUpdate();
+            log.info("Delete Response:{}", response);
+        } catch (Exception ex) {
+            log.error("Exception while Delete bank details");
+        }
+        log.info("End of BankDAO.delete");
+        return response;
+    }
+
+
+}
 
     /**
      * Delete Query
