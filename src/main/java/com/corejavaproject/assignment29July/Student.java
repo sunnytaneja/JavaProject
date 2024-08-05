@@ -8,6 +8,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class Student implements Comparable<Student> {
+    private int id;
     private String name;
     private String emailId;
     private String course;

@@ -19,11 +19,11 @@ public class BankMain {
 
         // for save the data
 
-        /*Bank bank = new Bank();
+        Bank bank = new Bank();
         bank.setBankName("HDFC");
         bank.setBankAddress("Chennai");
         int response = bankDAO.save(bank);
-        log.info("Response:{}", response);*/
+        log.info("Response:{}", response);
 
         // for update the data
 
@@ -35,10 +35,10 @@ public class BankMain {
 
         // for delete the data
 
-        Bank bank2 = new Bank();
-        bank2.setBankCode(2);
-        int response2 = bankDAO.delete(bank2);
-        log.info("Delete Response is:{}", response2);
+//        Bank bank2 = new Bank();
+//        bank2.setBankCode(2);
+//        int response2 = bankDAO.delete(bank2);
+//        log.info("Delete Response is:{}", response2);
 
     }
 }
