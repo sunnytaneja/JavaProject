@@ -21,8 +21,8 @@ public class BankMain {
          * for save the data
          */
         Bank bank = new Bank();
-        bank.setBankName("HDFC");
-        bank.setBankAddress("Chennai");
+        bank.setBankName("SBI");
+        bank.setBankAddress("Chandigarh");
         int response = bankDAO.save(bank);
         log.info("Save Response is:{}", response);
 
