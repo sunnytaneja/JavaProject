@@ -1,0 +1,16 @@
+2024-07-31 06:54:54,477 INFO c.c.a.StudentDetails [main] [Student(studentName=Sunny, studentCourse=JavaFullStack, CourseDuration=2 Months), Student(studentName=Amit, studentCourse=React, CourseDuration=3 Months)]
+2024-07-31 06:54:54,477 INFO c.c.a.StudentDetails [main] [Student(studentName=Sunny, studentCourse=JavaFullStack, CourseDuration=2 Months), Student(studentName=Amit, studentCourse=React, CourseDuration=3 Months)]
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with Lambda:Sunny
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with Lambda:Amit
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] [Student(studentName=Sunny, studentCourse=JavaFullStack, CourseDuration=2 Months), Student(studentName=Amit, studentCourse=React, CourseDuration=3 Months)]
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with For Loop:Sunny
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with For Loop:Amit
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] [Student(studentName=Sunny, studentCourse=JavaFullStack, CourseDuration=2 Months), Student(studentName=Amit, studentCourse=React, CourseDuration=3 Months)]
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with For Loop:Sunny
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with For Loop:Amit
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] [Student(studentName=Sunny, studentCourse=JavaFullStack, CourseDuration=2 Months), Student(studentName=Amit, studentCourse=React, CourseDuration=3 Months)]
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with Iterator with For Each Loop:Sunny
+2024-07-31 06:54:54,493 INFO c.c.a.StudentDetails [main] Student Details with Iterator with For Each Loop:Amit
+2024-07-31 06:59:39,646 INFO c.c.a.StudentDetails [main] Student Details is:Sunny
+2024-07-31 06:59:39,659 INFO c.c.a.StudentDetails [main] Student Details is:Amit
+2024-07-31 06:59:39,659 INFO c.c.a.StudentDetails [main] [Student(studentName=Sunny, studentCourse=JavaFullStack, CourseDuration=2 Months), Student(studentName=Amit, studentCourse=React, CourseDuration=3 Months)]
